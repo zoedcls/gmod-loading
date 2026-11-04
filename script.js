@@ -15,25 +15,16 @@ var CONFIG = {
   var gif = document.getElementById('custom-spinner');
   var fallback = document.getElementById('spinner-fallback');
 
-  // Aucune dépendance à l'ancien élément #server-name (supprimé du HTML).
-  if (container && CONFIG.backgrounds && CONFIG.backgrounds.length) {
-    var layers = [];
-    CONFIG.backgrounds.forEach(function (url, index) {
-      var layer = document.createElement('div');
-      layer.className = 'background' + (index === 0 ? ' active' : '');
-      // Le chemin est relatif à index.html, à la racine du dépôt GitHub Pages.
-      layer.style.backgroundImage = 'url(' + JSON.stringify(url) + ')';
-      container.appendChild(layer);
-      layers.push(layer);
-    });
-
+  // Les images sont déjà présentes dans le HTML : pas de CSS background-image.
+  if (container) {
+    var layers = container.querySelectorAll('img.background');
+    var active = 0;
     if (layers.length > 1) {
-      var active = 0;
       window.setInterval(function () {
         layers[active].classList.remove('active');
         active = (active + 1) % layers.length;
         layers[active].classList.add('active');
-      }, Math.max(2500, CONFIG.intervalMs));
+      }, 7000);
     }
   }
 
