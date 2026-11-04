@@ -1,10 +1,9 @@
 // PERSONNALISATION : modifier ce bloc uniquement.
 var CONFIG = {
-  serverName: 'MON SERVEUR GMOD',
+  serverName: '[FR] Les Terres Désolées | FalloutRP | Semi-Serious RP',
   backgrounds: [
-    'assets/backgrounds/bg-1.svg',
-    'assets/backgrounds/bg-2.svg',
-    'assets/backgrounds/bg-3.svg'
+    'assets/backgrounds/bg-1.png',
+    'assets/backgrounds/bg-2.png',
   ],
   intervalMs: 7000,
   spinnerGif: 'assets/spinner.gif'
