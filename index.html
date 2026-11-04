@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Connexion au serveur</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="backgrounds" aria-hidden="true" id="backgrounds"></div>
+  <div class="overlay" aria-hidden="true"></div>
+  <main class="layout">
+    <header class="header"><span class="brand-mark"></span><div class="brand"><strong id="server-name">MON SERVEUR GMOD</strong><small>GARRY'S MOD • COMMUNAUTÉ</small></div></header>
+    <section class="welcome" aria-label="Bienvenue">
+      <span class="eyebrow">BIENVENUE SUR NOTRE SERVEUR</span>
+      <h1>Prépare-toi à <em>jouer.</em></h1>
+      <p>Rejoins la communauté et profite de l'expérience.</p>
+    </section>
+    <div class="loading" role="status" aria-live="off">
+      <div class="spinner-holder">
+        <div class="spinner-fallback" id="spinner-fallback"></div>
+        <img id="custom-spinner" src="assets/spinner.gif" alt="" class="custom-spinner" hidden>
+      </div>
+      <div class="loading-copy"><strong>CONNEXION AU SERVEUR</strong><span>Ton aventure commence bientôt<span class="dots">...</span></span></div>
+    </div>
+    <footer>AMUSE-TOI BIEN <span class="footer-dash">—</span> À TRÈS VITE EN JEU</footer>
+  </main>
+</body>
+</html>
