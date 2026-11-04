@@ -170,6 +170,7 @@ body {
   width: min(95%, 680px);
   margin: auto 0;
   text-align: center;
+  transform: translateY(45px);
 }
 
 /* ===============================
@@ -183,8 +184,8 @@ body {
   align-items: center;
   justify-content: center;
 
-  width: clamp(300px, 36vw, 470px);
-  height: clamp(190px, 23vw, 300px);
+  width: clamp(250px, 30vw, 380px);
+  height: clamp(160px, 19vw, 245px);
 }
 
 /* Cadre décoratif */
@@ -339,8 +340,8 @@ footer {
   }
 
   .spinner-frame {
-    width: min(90vw, 380px);
-    height: 240px;
+    width: min(80vw, 310px);
+    height: 200px;
   }
 
   .loading-copy {
