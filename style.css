@@ -183,8 +183,8 @@ body {
   align-items: center;
   justify-content: center;
 
-  width: clamp(220px, 28vw, 350px);
-  height: clamp(220px, 28vw, 350px);
+  width: clamp(300px, 36vw, 470px);
+  height: clamp(190px, 23vw, 300px);
 }
 
 /* Cadre décoratif */
@@ -229,15 +229,15 @@ body {
 }
 
 .spinner-holder {
-  width: 88%;
-  height: 88%;
+  width: 94%;
+  height: 94%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* GIF personnalisé */
+/* GIF personnalisé — 265 x 132 px : préserver son ratio horizontal */
 
 .custom-spinner {
   width: 100%;
@@ -339,7 +339,7 @@ footer {
   }
 
   .spinner-frame {
-    width: 240px;
+    width: min(90vw, 380px);
     height: 240px;
   }
 

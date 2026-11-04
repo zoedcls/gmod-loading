@@ -1,23 +1,19 @@
-GARRY’S MOD — ECRAN DE CHARGEMENT
+ÉCRAN DE CHARGEMENT GMOD — MOJAVE UI (VERSION CORRIGÉE)
 
-1. Mettre votre GIF dans : assets/spinner.gif
-   Sans ce fichier, un spinner CSS de secours est visible.
-2. Remplacer les images de démonstration (SVG) par vos images JPEG/WebP/PNG.
-   Modifier ensuite la liste CONFIG.backgrounds dans script.js, par exemple :
-   backgrounds: ['assets/backgrounds/map1.jpg', 'assets/backgrounds/map2.jpg']
-3. Changer CONFIG.serverName dans script.js.
-4. Envoyer le contenu de ce dossier sur un hébergement web PUBLIC en HTTPS.
-   Ex. https://example.com/gmod-loading/index.html
-5. Dans garrysmod/cfg/server.cfg ajouter :
-   sv_loadingurl "https://example.com/gmod-loading/index.html"
-   Redémarrer le serveur, puis rejoindre pour tester.
+FICHIERS À PUBLIER : importez directement le CONTENU de ce dossier à la racine du dépôt GitHub zoedcls/gmod-loading (pas un sous-dossier).
 
-Le chargement GMod se poursuit normalement ; seules les informations visuelles
-sur la carte, les téléchargements et leur progression sont volontairement masquées.
-Cela ne cache pas d'éventuels messages superposés par GMod lui-même ou par un addon.
+index.html
+style.css
+script.js
+assets/spinner.gif             <- GIF animé inclus (265 x 132)
+assets/backgrounds/bg-1.png  <- image de fond incluse
+assets/backgrounds/bg-2.png  <- image de fond incluse
 
-Réglages dans script.js : intervalMs (en ms), backgrounds, spinnerGif, serverName.
-La taille d'affichage du GIF se règle dans style.css (.spinner-holder).
-Fichiers web uniquement : aucun PHP ni base de données nécessaire.
+La version précédente bloquait dans script.js : elle recherchait #server-name, supprimé du HTML. Le chargement des fonds et du GIF ne pouvait donc pas s'exécuter. Ce problème est corrigé.
 
-Doc officielle : https://wiki.facepunch.com/gmod/Loading_URL
+Sur GitHub : Add file > Upload files > glissez tous les fichiers/dossiers du dossier décompressé > Commit changes. S'il existe déjà des fichiers de même nom, les nouveaux remplacent les anciens.
+
+Page : https://zoedcls.github.io/gmod-loading/
+En cas de cache navigateur : Ctrl+F5. Si vous ajoutez d'autres fonds, modifiez la liste CONFIG.backgrounds dans script.js.
+
+IMPORTANT : pour conserver vos changements ultérieurs, modifiez les fichiers dans GitHub, et non le fichier ZIP seulement.
