@@ -1,31 +1,80 @@
+
 <!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <title>Connexion au serveur</title>
+
+  <title>Les Terres Désolées RP — Connexion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Bebas+Neue&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
-  <div class="backgrounds" aria-hidden="true" id="backgrounds"></div>
+
+  <!-- Fonds défilants -->
+  <div class="backgrounds" id="backgrounds" aria-hidden="true"></div>
+
+  <!-- Effets visuels -->
   <div class="overlay" aria-hidden="true"></div>
+  <div class="film-grain" aria-hidden="true"></div>
+
   <main class="layout">
-    <header class="header"><span class="brand-mark"></span><div class="brand"><strong id="server-name">MON SERVEUR GMOD</strong><small>GARRY'S MOD • COMMUNAUTÉ</small></div></header>
-    <section class="welcome" aria-label="Bienvenue">
-      <span class="eyebrow">BIENVENUE SUR NOTRE SERVEUR</span>
-      <h1>Prépare-toi à <em>jouer.</em></h1>
-      <p>Rejoins la communauté et profite de l'expérience.</p>
-    </section>
-    <div class="loading" role="status" aria-live="off">
-      <div class="spinner-holder">
-        <div class="spinner-fallback" id="spinner-fallback"></div>
-        <img id="custom-spinner" src="assets/spinner.gif" alt="" class="custom-spinner" hidden>
+
+    <!-- En-tête -->
+    <header class="header">
+      <span class="header-line"></span>
+      <span class="region">
+        LES TERRES DÉSOLÉES
+        <span class="accent">/</span>
+        MOJAVE
+      </span>
+      <span class="header-line"></span>
+    </header>
+
+    <!-- Chargement -->
+    <section class="loading"
+             role="status"
+             aria-label="Connexion au serveur">
+
+      <div class="spinner-frame">
+        <div class="spinner-holder">
+
+          <div class="spinner-fallback"
+               id="spinner-fallback"></div>
+
+          <img
+            id="custom-spinner"
+            src="assets/spinner.gif"
+            alt=""
+            class="custom-spinner"
+            hidden
+          >
+
+        </div>
       </div>
-      <div class="loading-copy"><strong>CONNEXION AU SERVEUR</strong><span>Ton aventure commence bientôt<span class="dots">...</span></span></div>
-    </div>
-    <footer>AMUSE-TOI BIEN <span class="footer-dash">—</span> À TRÈS VITE EN JEU</footer>
+
+      <div class="loading-copy">
+        CONNEXION AU SERVEUR<span class="dots">...</span>
+      </div>
+
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+      <span>LES TERRES DÉSOLÉES RP</span>
+      <span class="footer-separator">◆</span>
+      <span>MOJAVE NETWORK</span>
+    </footer>
+
   </main>
+
 </body>
 </html>
